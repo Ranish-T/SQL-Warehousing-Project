@@ -1,0 +1,25 @@
+# 💻 System-specific junk files
+.DS_Store
+Thumbs.db
+
+# 🔒 Sensitive config files
+*.env
+
+# 🧠 SQL Server related DB files
+*.mdf
+*.ldf
+*.ndf
+
+# 🧹 Temporary, log, and backup files
+*.log
+*.bak
+*.tmp
+
+# 💡 IDE & Editor configs
+.vscode/
+.idea/
+
+# 📤 Output files and diagrams (optional)
+*.csv
+*.png
+*.pdf
