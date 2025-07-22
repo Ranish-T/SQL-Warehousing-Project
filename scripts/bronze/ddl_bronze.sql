@@ -1,14 +1,17 @@
 /*
-===============================================================================
-DDL Script: Create Bronze Tables
-===============================================================================
-Script Purpose:
-    This script creates tables in the 'bronze' schema, dropping existing tables 
-    if they already exist.
-	  Run this script to re-define the DDL structure of 'bronze' Tables
-===============================================================================
+================================================================================
+📂 Bronze Layer: DDL Script to Create Tables
+================================================================================
+📌 Purpose:
+    - Drop and recreate Bronze layer tables inside the [bronze] schema.
+    - Useful for staging raw data as-is from various sources (CRM/ERP).
+    - All existing tables will be dropped and re-created.
+
+🛠️ Author  : Ranish T.
+================================================================================
 */
 
+-- 🔸 Drop and Create [bronze.crm_cust_info]
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 GO
@@ -24,6 +27,7 @@ CREATE TABLE bronze.crm_cust_info (
 );
 GO
 
+-- 🔸 Drop and Create [bronze.crm_prd_info]
 IF OBJECT_ID('bronze.crm_prd_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_prd_info;
 GO
@@ -39,6 +43,7 @@ CREATE TABLE bronze.crm_prd_info (
 );
 GO
 
+-- 🔸 Drop and Create [bronze.crm_sales_details]
 IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
     DROP TABLE bronze.crm_sales_details;
 GO
@@ -56,6 +61,7 @@ CREATE TABLE bronze.crm_sales_details (
 );
 GO
 
+-- 🔸 Drop and Create [bronze.erp_loc_a101]
 IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE bronze.erp_loc_a101;
 GO
@@ -66,6 +72,7 @@ CREATE TABLE bronze.erp_loc_a101 (
 );
 GO
 
+-- 🔸 Drop and Create [bronze.erp_cust_az12]
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE bronze.erp_cust_az12;
 GO
@@ -77,6 +84,7 @@ CREATE TABLE bronze.erp_cust_az12 (
 );
 GO
 
+-- 🔸 Drop and Create [bronze.erp_px_cat_g1v2]
 IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
 GO
