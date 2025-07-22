@@ -9,7 +9,7 @@
     Run this to reset and re-define the Silver layer DDL structure.
 
 📁 Schema Target: [silver]
-⚙️ Author: Ranish T (@ranish-dev)
+⚙️ Author: Ranish T 
 ===============================================================================
 */
 
